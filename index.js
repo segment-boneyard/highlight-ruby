@@ -23,6 +23,12 @@ function ruby(highlight){
 ruby.boolean = /\b(true|false)\b/;
 
 /**
+ * Strings
+ */
+
+ruby.string = /(("|')(\\?.)*?\2)/;
+
+/**
  * Comments
  */
 
@@ -46,12 +52,6 @@ ruby.keyword = /\b(alias|and|begin|break|case|catch|class|def|do|elsif|else|fail
  */
 
 ruby.number = /\b[-+]?(0x[a-fA-F0-9]+|0b[0-1_]+|0[0-7]*|[1-9][0-9_eE.]*)\b/;
-
-/**
- * Strings
- */
-
-ruby.string = /(("|')(\\?.)*?\2)/;
 
 /**
  * Functions

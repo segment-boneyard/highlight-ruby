@@ -37,6 +37,10 @@ describe('highlight-ruby', function(){
     test('class Whatever', '<span class="class"><span class="keyword">class</span> Whatever</span>');
   })
 
+  it('should match strings', function(){
+    test("'#string'", '<span class="string">&#39;#string&#39;</span>');
+  })
+
   it('should match keywords', function(){
     test('def', '<span class="keyword">def</span>');
   })
